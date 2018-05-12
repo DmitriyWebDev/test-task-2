@@ -38,9 +38,8 @@ let js_config = {
   plugins: [
 
     new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      "windows.jQuery": "jquery"
+      '$': "jquery",
+      'jQuery': "jquery"
     }),
 
   ].concat((NODE_ENV == 'development') ? [

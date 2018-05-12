@@ -1,1 +1,107 @@
 @import "template-variables";
+
+h1, h2, h3 {
+  display: block;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: "HelveticaNeueCyr-Light";
+}
+
+.text_style_mini-block,
+.text_style_mini-block-two,
+.text_style_benefits {
+  font-family: "Arial Black";
+  color: $main-text-color;
+}
+
+.text_style_preview,
+.text_style_main,
+.text_style_additional,
+.text_style_additional-two {
+  font-family: "Arial";
+  color: $main-text-color;
+}
+
+.text_style_additional,
+.text_style_additional-two {
+  font-size: 12px;
+}
+
+.text_style_additional-two {
+  color: $lighten-text-color;
+}
+
+
+@media (min-width: $tmpl-screen-xs) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  .text_style_mini-block {
+    font-size: 14px;
+  }
+  .text_style_mini-block-two {
+    font-size: 12px;
+  }
+  .text_style_benefits {
+    font-size: 12px;
+  }
+  .text_style_preview {
+    font-size: 14px;
+  }
+  .text_style_main {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: $tmpl-screen-sm) {
+  h1 {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: $tmpl-screen-md) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .text_style_benefits {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $tmpl-screen-lg) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .text_style_preview {
+    font-size: 16px;
+  }
+  .text_style_main {
+    font-size: 14px;
+  }
+}
+
