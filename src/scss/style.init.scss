@@ -1,0 +1,27 @@
+/** Libs */
+
+// Bootstrap
+
+@import "custom";
+@import "~bootstrap/scss/bootstrap";
+
+// Hamburgers ( Get only one animation from hamburgers )
+
+$hamburger-types: (
+        slider,
+        slider-r
+);
+
+@import "~hamburgers/_sass/hamburgers/hamburgers";
+
+/** END Libs */
+
+@import "common";
+@import "typography";
+
+@import "header";
+@import "main-page";
+@import "footer";
+
+// Responsive styles
+@import "media/media";

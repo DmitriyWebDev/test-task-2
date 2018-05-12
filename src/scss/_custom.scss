@@ -1,0 +1,26 @@
+@import "template-variables";
+
+// Customize bootstrap grid
+
+$grid-columns: 12;
+$grid-gutter-width: 0;
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+        xs: $tmpl-screen-xs,
+  // Small screen / phone
+        sm: $tmpl-screen-sm,
+  // Medium screen / tablet
+        md: $tmpl-screen-md,
+  // Large screen / desktop
+        lg: $tmpl-screen-lg,
+  // Extra large screen / wide desktop
+        xl: $tmpl-screen-xl
+);
+
+$container-max-widths: (
+        sm: 698px,
+        md: 900px,
+        lg: 1100px,
+        xl: 1200px
+);
