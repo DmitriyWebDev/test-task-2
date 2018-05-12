@@ -1,1 +1,80 @@
 @import "../template-variables";
+
+
+
+
+@media (min-width: $tmpl-screen-xs) {
+  .header-contact-info__phone {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: $tmpl-screen-sm) {
+
+}
+
+@media (min-width: $tmpl-screen-md) {
+
+  .header-slogan {
+    padding: 0;
+    font-size: 11px;
+
+    br {
+      display: none;
+    }
+  }
+
+  // Main menu
+  .header-menu-line {
+    padding: 0 80px;
+  }
+
+  .header-main-menu>li>a {
+    font-size: 10px;
+  }
+
+}
+
+@media (min-width: $tmpl-screen-lg) {
+
+  header {
+    padding: 27px 0 0 0;
+  }
+
+  .header-top-menu>li>a {
+    font-size: 14px;
+    padding: 8px 22px;
+  }
+
+  .header-contact-info__phone {
+    font-size: 17px;
+  }
+
+  .header-contact-info-work-days {
+    line-height: 19px;
+  }
+
+  .header-slogan {
+    font-size: 13px;
+  }
+
+  .header-info-line {
+    margin: 0 0 33px 0;
+  }
+
+  // Main menu
+  .header-menu-line {
+    padding: 0 107px;
+  }
+
+  .header-main-menu>li>a {
+    font-size: 12px;
+  }
+
+}
+
+@media (min-width: $tmpl-screen-xl) {
+  .header-menu-line {
+    padding: 0 160px;
+  }
+}

@@ -25,3 +25,103 @@ body {
   font-size: 16px;
   color: $main-text-color;
 }
+
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  color: $link-text-color;
+}
+
+.search-button {
+  display: inline-block;
+  vertical-align: top;
+  width: 20px;
+  height: 22px;
+  background-image: url("../img/search-icon-mobile.png");
+  background-size: 20px 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+@media (min-width: $tmpl-screen-sm) {
+  .search-button {
+    width: 15px;
+    height: 17px;
+    background-image: url("../img/search-icon-desktop.png");
+    background-size: 15px 17px;
+  }
+}
+
+@media (min-width: $tmpl-screen-sm) {
+  .search-button {
+    width: 15px;
+    height: 17px;
+    background-image: url("../img/search-icon-desktop.png");
+  }
+}
+
+.button {
+  display: inline-block;
+  vertical-align: top;
+  font-family: "Arial";
+  font-size: 14px;
+  color: #364556;
+  margin: 0;
+  padding: 10px 18px;
+  outline: none;
+  box-shadow: none;
+  cursor: pointer;
+  background-color: #DEE2E7;
+  border-width: 0;
+  border-radius: 4px;
+  word-wrap: break-word;
+  min-width: 217px;
+}
+
+.button:hover {
+  background-color: #EAC853;
+}
+
+.button_style_lighten {
+  background-color: #748A9D;
+  color: white;
+}
+
+.button_style_yellow {
+  background-color: #E4B820;
+  color: white;
+  min-width: 217px;
+}
+
+.button_style_darken {
+  background-color: #364556;
+  color: white;
+  min-width: 217px;
+}
+
+@media (min-width: $tmpl-screen-md) {
+
+  .button,
+  .button_style_lighten {
+    min-width: 1px;
+  }
+
+  .button_style_yellow,
+  .button_style_darken {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    min-width: 217px;
+  }
+
+}
+
+
+
+
+
+
+

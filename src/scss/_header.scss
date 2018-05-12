@@ -1,1 +1,153 @@
 @import "template-variables";
+
+header {
+  padding: 18px 0 0 0;
+  margin: 0 0 70px 0;
+}
+
+.header-top-line {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  align-items: stretch;
+  margin: 0 0 21px 0;
+}
+
+.header-top-line__search-button {
+  padding: 25px 0 10px 0;
+}
+
+.header-top-menu {
+  display: inline-flex;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header-top-menu>li {
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+}
+
+.header-top-menu>li>a {
+  display: block;
+  padding: 8px 18px;
+  @include text_style_additional;
+}
+
+.header-info-line {
+  margin: 0 0 23px 0;
+}
+
+// Logo
+
+.header-logo-link {
+  display: block;
+  text-decoration: none;
+  color: transparent;
+  text-align: left;
+}
+
+.header-logo-link__img {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+// Slogan
+
+.header-slogan {
+  display: block;
+  width: 100%;
+  word-wrap: break-word;
+  padding: 0 20px 0 0;
+  font-size: 11px;
+  line-height: 16px;
+  @include text_style_main;
+}
+
+// Contact info
+
+.header-contact-info__phone {
+
+}
+
+.header-contact-info-work-days {
+  line-height: 14px;
+}
+
+.header-contact-info-work-days__item {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+// Get call button
+
+.header-get-call__button {
+  min-width: 1px;
+  width: 100%;
+}
+
+@media (min-width: $tmpl-screen-md) {
+  .header-get-call__button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: $tmpl-screen-lg) {
+  .header-get-call__button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+// Main menu
+
+.header-menu-line {
+  padding: 0 44px;
+  background-color: #EAEDF0;
+}
+
+.header-main-menu {
+  display: inline-flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #EAEDF0;
+  padding: 20px 0;
+}
+
+.header-main-menu>li {
+  display: inline-block;
+  vertical-align: top;
+  list-style-type: none;
+}
+
+.header-main-menu>li>a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  text-transform: uppercase;
+  @include text_style_benefits;
+  text-align: center;
+  font-size: 9px;
+
+  &:hover {
+    color: $lighten-text-color;
+  }
+
+  &.active {
+    color: $link-text-color;
+  }
+
+}
+
