@@ -26,6 +26,14 @@ body {
   color: $main-text-color;
 }
 
+.container {
+  padding: 0 10px;
+}
+
+.container_padding_zero {
+  padding: 0;
+}
+
 ul, ol, li {
   margin: 0;
   padding: 0;
@@ -54,14 +62,17 @@ a:hover {
     background-image: url("../img/search-icon-desktop.png");
     background-size: 15px 17px;
   }
-}
 
-@media (min-width: $tmpl-screen-sm) {
   .search-button {
     width: 15px;
     height: 17px;
     background-image: url("../img/search-icon-desktop.png");
   }
+
+  .container {
+    padding: 0;
+  }
+
 }
 
 .button {

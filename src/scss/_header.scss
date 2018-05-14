@@ -1,7 +1,7 @@
 @import "template-variables";
 
 header {
-  padding: 18px 0 0 0;
+  padding: 0;
   margin: 0 0 70px 0;
 }
 
@@ -41,15 +41,35 @@ header {
 
 .header-info-line {
   margin: 0 0 23px 0;
+  background-color: #F8F9FA;
+  height: 70px;
+  position: relative;
+  padding: 0 10px;
 }
 
 // Logo
 
-.header-logo-link {
-  display: block;
+.header-info-line__mobile-item {
+  text-align: center;
+  height: 70px;
+  display: flex;
   text-decoration: none;
   color: transparent;
-  text-align: left;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-logo-link {
+  display: flex;
+  text-decoration: none;
+  color: transparent;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
 }
 
 .header-logo-link__img {
@@ -58,6 +78,7 @@ header {
   max-width: 100%;
   margin: 0;
   padding: 0;
+  width: 126px;
 }
 
 // Slogan
@@ -151,3 +172,83 @@ header {
 
 }
 
+.phone-button {
+  display: inline-block;
+  vertical-align: top;
+  width: 22px;
+  height: 22px;
+  background-image: url(../img/phone-icon-mobile.png);
+  background-size: 22px 22px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.mobile-menu-button {
+  width: 40px;
+  height: 40px;
+  background-color: #E4B820;
+  cursor: pointer;
+}
+
+// Mobile menu button
+
+.mobile-menu-button {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mobile-menu-button-no-active__inner {
+  display: block;
+  width: 16px;
+}
+
+.mobile-menu-button-no-active__item {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin: 0 0 4px 0;
+}
+
+.mobile-menu-button-no-active__item:last-child {
+  margin: 0;
+}
+
+.mobile-menu-button-active {
+  display: none;
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/mobile-btn-cross-icon.png");
+  background-size: 100% 100%;
+}
+
+.mobile-menu-button.is-active {
+
+  .mobile-menu-button-no-active {
+    display: none;
+  }
+
+  .mobile-menu-button-active {
+    display: block;
+  }
+
+}
+
+.header-mobile-menu {
+  display: block;
+  position: absolute;
+  bottom: -9px;
+  left: 10px;
+  width: calc(92% + 1px);
+  background-color: #EAEDF0;
+}
+
+.header-mobile-menu-info {
+  background-color: #E4B820;
+  padding: 0 0 0 50px;
+}

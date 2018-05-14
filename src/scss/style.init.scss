@@ -5,15 +5,6 @@
 @import "custom";
 @import "../../libs/bootstrap-4/scss/bootstrap";
 
-// Hamburgers ( Get only one animation from hamburgers )
-
-$hamburger-types: (
-        slider,
-        slider-r
-);
-
-@import "~hamburgers/_sass/hamburgers/hamburgers";
-
 /** END Libs */
 
 @import "common";
