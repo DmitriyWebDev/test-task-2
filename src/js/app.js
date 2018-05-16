@@ -64,4 +64,62 @@ $( document ).ready(function() {
 
   })($);
 
+  /** Top search form */
+
+  (function ($) {
+
+    // Show/hide search form
+
+    const searchFrom = $( '.js-top-search-form' );
+
+    $(document).click( function(event){
+      if( $(event.target).closest(searchFrom).length)
+        return;
+      jQuery(searchFrom).css({ 'display' : 'none' });
+      event.stopPropagation();
+    });
+
+    $( '.js-show-top-search' ).on( 'click', function () {
+
+      setTimeout( () => {
+        searchFrom.css({ 'display' : 'block' });
+      }, 10 );
+
+    });
+
+    // Cross browser placeholder color
+
+    const searchInput = $( '.js-top-search-input' );
+    const searchInputPlaceholder = $( '.js-top-search-form .js-top-search-form__input-placeholder');
+
+    // Sync two search inputs
+    searchInput.on( 'input', function () {
+
+      $( '.js-top-search-input' ).val( $(this).val() );
+
+    });
+
+    searchInput.on( 'focus', function () {
+
+      if( !searchInputPlaceholder.length ) return false;
+
+      searchInputPlaceholder.css({ 'display' : 'none' });
+
+    });
+
+    searchInput.on( 'blur', function () {
+
+      if( !searchInputPlaceholder.length ) return false;
+
+      const $this = $(this);
+      const value = $this.val();
+
+      if( !value.length ) {
+        searchInputPlaceholder.css({ 'display' : 'block' });
+      }
+
+    });
+
+  })($);
+
 });
