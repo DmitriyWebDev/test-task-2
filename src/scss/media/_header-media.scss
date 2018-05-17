@@ -4,6 +4,7 @@
 
 
 @media (min-width: $tmpl-screen-xs) {
+
   .header-contact-info__phone {
     font-size: 13px;
   }
@@ -11,6 +12,11 @@
 }
 
 @media (min-width: $tmpl-screen-sm) {
+
+  header {
+    margin: 0 0 44px 0;
+    padding: 18px 0 0 0;
+  }
 
   .header-info-line {
     background-color: white;
@@ -31,10 +37,6 @@
     text-align: left;
   }
 
-  header {
-    padding: 18px 0 0 0;
-  }
-
   // Search form
 
   .top-search-form {
@@ -46,9 +48,19 @@
     left: 0;
   }
 
+  // Breadcrumbs
+
+  .breadcrumbs__link:after {
+    margin: 0;
+  }
+
 }
 
 @media (min-width: $tmpl-screen-md) {
+
+  header {
+    margin: 0 0 41px 0;
+  }
 
   .header-slogan {
     padding: 0;
@@ -81,6 +93,7 @@
 
   header {
     padding: 27px 0 0 0;
+    margin: 0 0 62px 0;
   }
 
   .header-top-menu>li>a {

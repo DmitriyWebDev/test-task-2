@@ -2,7 +2,7 @@
 
 header {
   padding: 0;
-  margin: 0 0 70px 0;
+  margin: 0 0 0 0;
 }
 
 .header-top-line {
@@ -11,7 +11,7 @@ header {
   flex-wrap: wrap;
   flex-direction: row-reverse;
   align-items: stretch;
-  margin: 0 0 21px 0;
+  margin: 0 0 25px 0;
   position: relative;
 }
 
@@ -422,4 +422,27 @@ header {
 .top-search-form__button:focus {
   box-shadow: none;
   outline: none;
+}
+
+.breadcrumbs {
+  display: block;
+  width: 100%;
+  text-align: left;
+  line-height: 17px;
+}
+
+.breadcrumbs__link {
+  display: inline;
+  vertical-align: top;
+}
+
+.breadcrumbs__link:after {
+  content: "/";
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 3px;
+}
+
+.breadcrumbs__link:last-child:after {
+  display: none;
 }
