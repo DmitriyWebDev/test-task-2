@@ -122,4 +122,16 @@ $( document ).ready(function() {
 
   })($);
 
+  /** Form elements custom view set with js (custom scroll too) */
+
+  (function($) {
+
+    $('.js-styled-select').selectpicker();
+
+    $(".js-styled-select .dropdown-menu>.inner").niceScroll({
+      cursoropacitymin : 1
+    });
+
+  })($);
+
 });

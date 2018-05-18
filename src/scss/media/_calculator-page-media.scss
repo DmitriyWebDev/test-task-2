@@ -1,0 +1,76 @@
+@import "../template-variables";
+
+@media (min-width: $tmpl-screen-xs) {
+
+}
+
+@media (min-width: $tmpl-screen-sm) {
+
+  .user-redactor-content {
+    margin: 0 0 43px 0;
+  }
+
+  .calc-form-item {
+    padding: 36px 62px 19px;
+  }
+
+  .calc-form-item__auto-settings-selects {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .form-select-wrap {
+    width: 275px;
+  }
+
+}
+
+@media (min-width: $tmpl-screen-md) {
+
+  .user-redactor-content {
+    margin: 0 0 63px 0;
+  }
+
+  .calc-form-item {
+    padding: 36px 0 29px;
+  }
+
+  .calc-form-item__auto-settings-selects {
+    padding-top: 16px;
+  }
+
+  .form-select-wrap {
+    width: 285px;
+  }
+
+  .calc-form-item__title {
+    font-size: 17px;
+    margin: 0 0 17px 0;
+    padding: 25px 0 0 37px;
+  }
+
+}
+
+@media (min-width: $tmpl-screen-lg) {
+
+  .user-redactor-content {
+    margin: 0 0 40px 0;
+  }
+
+  .form-select-wrap {
+    width: 345px;
+  }
+
+  .calc-form-item__title {
+    padding: 25px 0 0 0;
+  }
+
+}
+
+@media (min-width: $tmpl-screen-xl) {
+  .form-select-wrap {
+    width: 385px;
+  }
+}

@@ -14,8 +14,12 @@
 @media (min-width: $tmpl-screen-sm) {
 
   header {
-    margin: 0 0 44px 0;
+    margin: 0 0 50px 0;
     padding: 18px 0 0 0;
+  }
+
+  .header-top-line {
+    margin: 0 0 20px 0;
   }
 
   .header-info-line {
@@ -59,7 +63,7 @@
 @media (min-width: $tmpl-screen-md) {
 
   header {
-    margin: 0 0 41px 0;
+    margin: 0 0 46px 0;
   }
 
   .header-slogan {
@@ -93,7 +97,7 @@
 
   header {
     padding: 27px 0 0 0;
-    margin: 0 0 62px 0;
+    margin: 0 0 68px 0;
   }
 
   .header-top-menu>li>a {

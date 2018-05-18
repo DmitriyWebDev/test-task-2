@@ -248,6 +248,7 @@ header {
   position: absolute;
   top: 55px;
   left: 10px;
+  z-index: 15;
   width: calc(92% + 1px);
   background-color: #EAEDF0;
 }
@@ -429,6 +430,7 @@ header {
   width: 100%;
   text-align: left;
   line-height: 17px;
+  margin: 0 0 10px 0;
 }
 
 .breadcrumbs__link {

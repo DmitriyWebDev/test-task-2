@@ -1,0 +1,110 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "jquery-form-styler",
+        "scope": null,
+        "escapedName": "jquery-form-styler",
+        "name": "jquery-form-styler",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\my_web_projects\\Rumedix ( test task )\\Test task 2\\template"
+    ]
+  ],
+  "_from": "jquery-form-styler@latest",
+  "_id": "jquery-form-styler@2.0.2",
+  "_inCache": true,
+  "_location": "/jquery-form-styler",
+  "_nodeVersion": "6.11.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/jquery-form-styler_2.0.2_1520320438766_0.8689721290318946"
+  },
+  "_npmUser": {
+    "name": "dimox",
+    "email": "dimox.name@gmail.com"
+  },
+  "_npmVersion": "3.10.10",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "jquery-form-styler",
+    "scope": null,
+    "escapedName": "jquery-form-styler",
+    "name": "jquery-form-styler",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery-form-styler/-/jquery-form-styler-2.0.2.tgz",
+  "_shasum": "0b9aafcb180527ffe1714fc25dec491c33102fef",
+  "_shrinkwrap": null,
+  "_spec": "jquery-form-styler",
+  "_where": "C:\\my_web_projects\\Rumedix ( test task )\\Test task 2\\template",
+  "author": {
+    "name": "Dimox",
+    "url": "http://dimox.name/"
+  },
+  "bugs": {
+    "url": "https://github.com/Dimox/jQueryFormStyler/issues"
+  },
+  "contributors": [
+    {
+      "name": "Sergey Slipchenko",
+      "email": "faergeek@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "jquery": "^1.7.0"
+  },
+  "description": "jQuery-плагин для стилизации элементов HTML-форм",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-csscomb": "^3.0.8",
+    "gulp-header": "^1.8.8",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.6.0",
+    "gulp-uglify": "^2.1.2"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "0b9aafcb180527ffe1714fc25dec491c33102fef",
+    "tarball": "https://registry.npmjs.org/jquery-form-styler/-/jquery-form-styler-2.0.2.tgz",
+    "fileCount": 18,
+    "unpackedSize": 161706
+  },
+  "gitHead": "bfb8f6da519d2bbc84d3582b81a0fbd74dd1d2fc",
+  "homepage": "http://dimox.name/jquery-form-styler/",
+  "keywords": [
+    "jquery",
+    "form",
+    "styler",
+    "dimox"
+  ],
+  "license": "MIT",
+  "main": "dist/jquery.formstyler.min.js",
+  "maintainers": [
+    {
+      "name": "dimox",
+      "email": "dimox.name@gmail.com"
+    }
+  ],
+  "name": "jquery-form-styler",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dimox/jQueryFormStyler.git"
+  },
+  "scripts": {},
+  "version": "2.0.2"
+}

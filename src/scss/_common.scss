@@ -20,10 +20,21 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "MyriadPro-Regular";
+  src: url(./fonts/MyriadPro/MyriadPro-Regular.eot);
+  src: url(./fonts/MyriadPro/MyriadPro-Regular.eot?#iefix&v=4.7.0) format("embedded-opentype"),
+  url(./fonts/MyriadPro/MyriadPro-Regular.woff) format("woff"),
+  url(./fonts/MyriadPro/MyriadPro-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   color: $main-text-color;
+  min-height: 5000px;
 }
 
 .container {
@@ -43,6 +54,22 @@ a:hover {
   color: $link-text-color;
 }
 
+.page-title {
+  margin: 0 0 36px 0;
+}
+
+.user-redactor-content {
+  line-height: 24px;
+  text-align: left;
+  @include text_style_main;
+  margin: 0 0 26px 0;
+
+  p {
+    margin: 0 0 10px 0;
+  }
+
+}
+
 .search-button {
   display: inline-block;
   vertical-align: top;
@@ -53,26 +80,6 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer;
-}
-
-@media (min-width: $tmpl-screen-sm) {
-  .search-button {
-    width: 15px;
-    height: 17px;
-    background-image: url("../img/search-icon-desktop.png");
-    background-size: 15px 17px;
-  }
-
-  .search-button {
-    width: 15px;
-    height: 17px;
-    background-image: url("../img/search-icon-desktop.png");
-  }
-
-  .container {
-    padding: 0;
-  }
-
 }
 
 .button {
@@ -114,6 +121,30 @@ a:hover {
   min-width: 217px;
 }
 
+@media (min-width: $tmpl-screen-sm) {
+  .search-button {
+    width: 15px;
+    height: 17px;
+    background-image: url("../img/search-icon-desktop.png");
+    background-size: 15px 17px;
+  }
+
+  .search-button {
+    width: 15px;
+    height: 17px;
+    background-image: url("../img/search-icon-desktop.png");
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .page-title {
+    margin: 0 0 42px 0;
+  }
+
+}
+
 @media (min-width: $tmpl-screen-md) {
 
   .button,
@@ -128,7 +159,33 @@ a:hover {
     min-width: 217px;
   }
 
+  .page-title {
+    margin: 0 0 47px 0;
+  }
+
+  .user-redactor-content {
+    line-height: 27px;
+    font-size: 14px;
+  }
+
 }
+
+@media (min-width: $tmpl-screen-lg) {
+
+  .page-title {
+    margin: 0 0 68px 0;
+  }
+
+  .user-redactor-content {
+    line-height: 28px;
+  }
+
+}
+
+@media (min-width: $tmpl-screen-xl) {
+
+}
+
 
 
 

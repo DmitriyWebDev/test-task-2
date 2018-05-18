@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="libs/slick-carousel/slick/slick.css"/>
     <link rel="stylesheet" href="libs/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="libs/bootstrap-select-v4/bootstrap-select.min.css"/>
+    <link rel="stylesheet" href="libs/jquery-form-styler/dist/jquery.formstyler.theme.css"/>
     <link rel="stylesheet" href="style.css"/>
 
 </head>
@@ -316,19 +318,136 @@
 
 </header>
 
-<div class="container">
-    <div class="breadcrumbs">
-        <a class="breadcrumbs__link text_style_additional-two" href="#">
-            Главная страница
-        </a>
-        <a class="breadcrumbs__link text_style_additional-two" href="#">
-            Название раздела
-        </a>
-        <a class="breadcrumbs__link text_style_additional-two" href="#">
-            Название страницы
-        </a>
+<div class="page-content">
+
+    <div class="container">
+
+        <div class="breadcrumbs">
+            <a class="breadcrumbs__link text_style_additional-two" href="#">
+                Главная страница
+            </a>
+            <a class="breadcrumbs__link text_style_additional-two" href="#">
+                Название раздела
+            </a>
+            <a class="breadcrumbs__link text_style_additional-two" href="#">
+                Название страницы
+            </a>
+        </div>
+
+        <div class="page-title">
+            <h1>
+                Расчёт стоимости
+            </h1>
+        </div>
+
+        <div class="user-redactor-content">
+            <p>
+                Воспользуйтесь нашим калькулятором для точного расчета необходимого
+                количества шумоизоляционных материалов. Так же можно рассчитать
+                стоимость установки нужного вам набора материалов. Это удобно и
+                позволит вам избежать ненужных трат!
+            </p>
+        </div>
+
+        <div class="calc-form-wrap">
+
+            <form id="calc-form" class="calc-form">
+
+                <div class="calc-form-item">
+
+                    <div class="row">
+
+                        <div class="col-12 col-md-3 col-lg-2 offset-lg-1">
+
+                            <div class="calc-form-item__title">
+                                1. Автомобиль
+                            </div>
+
+                        </div>
+
+                        <div class="col-12 col-md-8">
+
+                            <div class="calc-form-item__auto-settings-selects">
+
+                                <label class="form-select-wrap" for="car-type">
+                                    <select class="form-select form-select_view_custom js-styled-select js-select-styled-scroll" name="car-type" id="car-type">
+                                        <option selected="selected" value="">Выберите марку авто</option>
+                                        <option value="Марка 1">Марка 1</option>
+                                        <option value="Марка 2">Марка 2</option>
+                                        <option value="Марка 3">Марка 3</option>
+                                        <option value="Марка 4">Марка 4</option>
+                                        <option value="Марка 5">Марка 5</option>
+                                        <option value="Марка 6">Марка 6</option>
+                                        <option value="Марка 7">Марка 7</option>
+                                        <option value="Марка 8">Марка 8</option>
+                                        <option value="Марка 9">Марка 9</option>
+                                        <option value="Марка 10">Марка 10</option>
+                                        <option value="Марка 11">Марка 11</option>
+                                        <option value="Марка 12">Марка 12</option>
+                                        <option value="Марка 13">Марка 13</option>
+                                        <option value="Марка 14">Марка 14</option>
+                                        <option value="Марка 15">Марка 15</option>
+                                        <option value="Марка 16">Марка 16</option>
+                                        <option value="Марка 17">Марка 17</option>
+                                        <option value="Марка 18">Марка 18</option>
+                                        <option value="Марка 19">Марка 19</option>
+                                        <option value="Марка 20">Марка 20</option>
+                                        <option value="Марка 21">Марка 21</option>
+                                        <option value="Марка 22">Марка 22</option>
+                                        <option value="Марка 23">Марка 23</option>
+                                    </select>
+                                </label>
+
+                                <label class="form-select-wrap" for="car-model">
+                                    <select class="form-select form-select_view_custom js-styled-select js-select-styled-scroll" name="car-model" id="car-model">
+                                        <option selected="selected" value="">Выберите модель авто</option>
+                                        <option value="Модель 1">Модель 1</option>
+                                        <option value="Модель 2">Модель 2</option>
+                                        <option value="Модель 3">Модель 3</option>
+                                        <option value="Модель 4">Модель 4</option>
+                                        <option value="Модель 5">Модель 5</option>
+                                        <option value="Модель 6">Модель 6</option>
+                                        <option value="Модель 7">Модель 7</option>
+                                        <option value="Модель 8">Модель 8</option>
+                                        <option value="Модель 9">Модель 9</option>
+                                        <option value="Модель 10">Модель 10</option>
+                                        <option value="Модель 11">Модель 11</option>
+                                        <option value="Модель 12">Модель 12</option>
+                                        <option value="Модель 13">Модель 13</option>
+                                        <option value="Модель 14">Модель 14</option>
+                                        <option value="Модель 15">Модель 15</option>
+                                        <option value="Модель 16">Модель 16</option>
+                                        <option value="Модель 17">Модель 17</option>
+                                        <option value="Модель 18">Модель 18</option>
+                                        <option value="Модель 19">Модель 19</option>
+                                        <option value="Модель 20">Модель 20</option>
+                                        <option value="Модель 21">Модель 21</option>
+                                        <option value="Модель 22">Модель 22</option>
+                                        <option value="Модель 23">Модель 23</option>
+                                    </select>
+                                </label>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+            </form>
+
+        </div>
+
     </div>
+
 </div>
+
+
 
 
 
@@ -354,6 +473,8 @@
 <script src="libs/jquery/jquery-3.3.1.min.js"></script>
 <script src="libs/popper.js/dist/umd/popper.js"></script>
 <script src="libs/bootstrap-4/dist/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap-select-v4/bootstrap-select.min.js"></script>
+<script src="libs/jquery.nicescroll/jquery.nicescroll.min.js"></script>
 <script src="js/script.js"></script>
 
 
