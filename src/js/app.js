@@ -5,8 +5,12 @@ $( document ).ready(function() {
   /** Bootstrap 4 Tooltips */
 
   $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="popover"]').popover({
+      //trigger: 'focus'
+    })
   });
+
+  //$('#example').popover(options)
 
   /** Scrol to top button */
 
