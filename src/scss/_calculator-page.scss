@@ -12,6 +12,10 @@
   margin: 0 0 5px 0;
 }
 
+.calc-form-item_view_auto-elements {
+  padding: 26px 20px 21px 20px;
+}
+
 .calc-form-item__title {
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -124,11 +128,40 @@
 
 // Form auto elements
 
+.calc-form-item__form-auto-elements {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .form-auto-elements-item {
   display: inline-flex;
   flex-direction: row;
   width: 100%;
   margin: 0 0 8px 0;
+}
+
+.form-auto-elements-item:nth-child(1) {
+  order: 1;
+}
+
+.form-auto-elements-item:nth-child(2) {
+  order: 2;
+}
+
+.form-auto-elements-item:nth-child(3) {
+  order: 3;
+}
+
+.form-auto-elements-item:nth-child(4) {
+  order: 4;
+}
+
+.form-auto-elements-item:nth-child(5) {
+  order: 5;
+}
+
+.form-auto-elements-item:nth-child(6) {
+  order: 6;
 }
 
 .form-auto-elements-item__img-wrap {
@@ -137,6 +170,14 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid $plank-color-six;
+  cursor: pointer;
+  margin: 0 24px 0 0;
+  background-color: transparent;
+}
+
+.form-auto-elements-item__img-wrap_active {
+  background-color: $plank-color-four;
 }
 
 .form-auto-elements-item__img {
@@ -149,6 +190,13 @@
   justify-content: center;
 }
 
+.form-auto-elements-item__data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 // form checkbox
 
 .form-checkbox {
@@ -157,8 +205,9 @@
   cursor: pointer;
   position: relative;
   width: 25px;
+  min-width: 25px;
   height: 25px;
-  margin: 0 14px 0 0;
+  margin: 0 12px 0 0;
 }
 
 .js-form-checkbox__input {
@@ -198,12 +247,20 @@
   }
 }
 
-// tooltip-button
+.form-checkbox-label {
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px 11px 5px 0;
+  cursor: pointer;
+}
+
+// tooltip-button (bootstrap popover)
 
 .tooltip-button {
   display: inline-block;
   vertical-align: top;
   width: 24px;
+  min-width: 24px;
   height: 24px;
   cursor: pointer;
   margin: 0;
@@ -226,4 +283,121 @@
   height: 11px;
   background-image: url("../img/question-icon.png");
   background-size: 100% 100%;
+}
+
+.popover {
+  background-color: $plank-color-five;
+  font-family: Arial, sans-serif;
+  border-radius: 0;
+}
+
+.bs-popover-top .arrow::after,
+.bs-popover-auto[x-placement^="top"] .arrow::after,
+.bs-popover-top .arrow::before,
+.bs-popover-auto[x-placement^="top"] .arrow::before {
+  bottom: 3px;
+  border-top-color: $plank-color-five;
+}
+
+.bs-popover-bottom .arrow::after,
+.bs-popover-auto[x-placement^="bottom"] .arrow::after,
+.bs-popover-bottom .arrow::before,
+.bs-popover-auto[x-placement^="bottom"] .arrow::before{
+  top: 3px;
+  border-bottom-color: $plank-color-five;
+}
+
+.popover-body {
+  padding: 13px 14px;
+  color: white;
+  font-size: 13px;
+}
+
+// form-input-counter
+
+.form-input-counter {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  vertical-align: top;
+  width: 124px;
+  height: 40px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.form-input-counter__decrement,
+.form-input-counter__increment {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid $plank-color-four;
+  position: relative;
+  z-index: 2;
+
+  .form-input-counter__ico {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 10px;
+    height: 10px;
+  }
+
+  .form-input-counter__ico-item {
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: $lighten-text-color;
+  }
+
+  &:hover {
+    background-color: $plank-color-four;
+
+    .form-input-counter__ico-item {
+      background-color: white;
+    }
+  }
+
+}
+
+.form-input-counter__increment .form-input-counter__ico-item:last-child {
+  position: absolute;
+  transform: rotate(90deg);
+  left: 0;
+  top: 4px;
+}
+
+
+
+
+
+.form-input-counter__input-label {
+  display: inline-block;
+  vertical-align: top;
+  width: 24px;
+  margin: 0 auto;
+}
+
+.form-input-counter__input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: $main-text-color;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  border-width: 0;
+  outline: none;
+  box-shadow: none;
+  background-color: transparent;
 }

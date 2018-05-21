@@ -6,7 +6,7 @@ $( document ).ready(function() {
 
   $(function () {
     $('[data-toggle="popover"]').popover({
-      //trigger: 'focus'
+      trigger: 'focus'
     })
   });
 
@@ -137,5 +137,50 @@ $( document ).ready(function() {
     });
 
   })($);
+
+  /** Form, section 'Auto - elements', checkboxes */
+  (function($) {
+
+    const parentSelector        = '.js-form-auto-elements-item';
+    const inputCheckboxSelector = '.js-form-checkbox__input';
+    const imgWrapSelector       = '.js-form-auto-elements-item__img-wrap';
+    const imgWrapActiveClass    = 'form-auto-elements-item__img-wrap_active';
+    const imgSelector           = '.js-form-auto-elements-item__img';
+
+    $( imgWrapSelector ).on( 'click', function () {
+
+      const parent   = $( this ).closest( parentSelector );
+      const checkbox = $( parent.find( inputCheckboxSelector )[0] );
+
+      checkbox.click();
+
+    });
+
+    $( inputCheckboxSelector ).on( 'change', function () {
+
+      const $this           = $( this );
+      const parent          = $this.closest( parentSelector );
+      const checkboxChecked = $this.prop('checked');
+
+      const img             = $( parent.find( imgSelector )[0] );
+      const imgWrap         = img.closest( imgWrapSelector );
+
+      let newImgSrc         = img.attr('src');
+
+      if( checkboxChecked ) {
+        newImgSrc = img.data('active-img');
+        imgWrap.addClass( imgWrapActiveClass );
+      } else {
+        newImgSrc = img.data('img');
+        imgWrap.removeClass( imgWrapActiveClass );
+      }
+
+      img.attr( 'src', newImgSrc );
+
+    });
+
+  })($);
+
+
 
 });
