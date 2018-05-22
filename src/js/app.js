@@ -156,7 +156,7 @@ $( document ).ready(function() {
 
     });
 
-    $( inputCheckboxSelector ).on( 'change', function () {
+    $( parentSelector + ' ' + inputCheckboxSelector ).on( 'change', function () {
 
       const $this           = $( this );
       const parent          = $this.closest( parentSelector );
@@ -241,6 +241,27 @@ $( document ).ready(function() {
     }
 
   })($);
+
+  /** Radio buttons is sound insulation section */
+
+  $(function () {
+
+    const rootParent         = '.js-sound-insulation';
+    const parentSelector     = '.js-sound-insulation-item';
+    const radioBtnSelector   = '.js-form-checkbox__input';
+    const btnContentSelector = '.js-sound-insulation-item__content';
+
+    $( parentSelector + ' ' + radioBtnSelector ).on("change", function() {
+
+      const $this  = $(this);
+      const parent = $this.closest( parentSelector );
+
+      $( rootParent + ' ' + btnContentSelector ).css({ 'display' : 'none'});
+      $( btnContentSelector, parent ).css({ 'display' : 'block'});
+
+    });
+
+  });
 
 
 });
