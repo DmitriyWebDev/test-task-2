@@ -179,8 +179,68 @@ $( document ).ready(function() {
 
     });
 
-  })($);
+  })($)
 
+  /** Inputs with numbers */
+
+  $(function () {
+
+    $( '.js-input-number-only' ).on("input", function() {
+
+      const $this = $(this);
+      const value = $this.val();
+
+      if( value.match(/[^0-9]/g) ) {
+        $this.val( value.replace(/[^0-9]/g, '') );
+      }
+
+    });
+
+  });
+
+
+  /** Form input counter */
+
+  (function($) {
+
+    const counterSelector = '.js-form-input-counter';
+    const inputSelector   = '.js-form-input-counter__input';
+
+    $( '.js-form-input-counter__decrement' ).on( 'click', function () {
+      changeInputVal( false, $(this) );
+    });
+
+    $( '.js-form-input-counter__increment' ).on( 'click', function () {
+      changeInputVal( true, $(this) );
+    });
+
+    function changeInputVal( increment = true, $button = false ) {
+
+      if( !$button ) return false;
+
+      const parent   = $button.closest( counterSelector );
+      const input    = $( parent.find( inputSelector )[0] );
+      let inputVal   = parseInt( input.val() );
+
+      if( !increment ) {
+
+        if( inputVal <= 1 ) {
+          inputVal = 1;
+        } else {
+          inputVal--;
+        }
+
+      } else {
+
+        inputVal++;
+
+      }
+
+      input.val( inputVal );
+
+    }
+
+  })($);
 
 
 });
