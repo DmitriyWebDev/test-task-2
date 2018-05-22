@@ -414,13 +414,16 @@
 // Sound insulation level
 
 .calc-form-item_view_sound-insulation-level {
-  //padding-left: 0 !important;
-  //padding-right: 0 !important;
+  padding-top: 42px;
+  padding-bottom: 0;
 }
 
 .sound-insulation-item {
   border-bottom: 1px solid $plank-color-six;
+  padding: 0 0 14px 0;
+  margin: 0 0 23px 0;
 }
+
 
 .sound-insulation-item:last-child {
   border-width: 0;
@@ -432,10 +435,15 @@
   color: #B28500;
   display: block;
   width: 100%;
+  margin: 3px 0 30px 0;
+  padding-left: 15px
 }
 
 .sound-insulation-item__label {
   cursor: pointer;
+  text-transform: uppercase;
+  @include text_style_additional;
+  margin: 0 13px 0 0;
 }
 
 // Horizontal indicator
@@ -473,14 +481,24 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin: 0 0 20px 0;
+}
+
+.sound-insulation-item__content {
+  padding: 42px 0 0 0;
+}
+
+.indicator-item__label,
+.indicator-item__value {
+  padding: 0 0 4px 0;
 }
 
 .indicator-item__label {
-  @include text_style_additional;
+  @include text_style_additional-two;
 }
 
 .indicator-item__value {
-  @include text_style_additional;
+  @include text_style_additional-two;
   color: $main-text-color;
 }
 

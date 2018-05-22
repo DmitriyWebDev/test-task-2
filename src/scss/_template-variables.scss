@@ -19,6 +19,12 @@ $plank-color-six:   #DEE2E7;
 
 @mixin text_style_additional {
   font-family: "Arial";
+  color: $main-text-color;
+  font-size: 12px;
+}
+
+@mixin text_style_additional-two {
+  font-family: "Arial";
   color: $lighten-text-color;
   font-size: 12px;
 }
