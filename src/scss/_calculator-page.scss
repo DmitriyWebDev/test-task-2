@@ -1,7 +1,7 @@
 @import "template-variables";
 
 .calc-form-wrap {
-  margin: 0 0 44px 0;
+  margin: 0 0 58px 0;
 }
 
 .calc-form-item {
@@ -186,7 +186,7 @@
 }
 
 .form-auto-elements-item__img {
-  max-width: 80%;
+  max-width: 80px;
 }
 
 .form-auto-elements-item__data-wrap {
@@ -642,6 +642,10 @@
 
   .calc-result-table__item-label {
     line-height: 14px;
+
+    br {
+      display: none;
+    }
   }
 
   .calc-result-table__item-value {
@@ -659,7 +663,7 @@
 // Form submit block
 
 .calc-result-submit {
-  padding: 30px 0;
+  padding: 30px 0 41px 0;
   background-color: $plank-color-three;
   border: 1px solid $plank-color-two;
   border-width: 0 1px;
@@ -668,7 +672,73 @@
 .calc-result-submit__button {
   display: block;
   margin: 0 auto;
+  min-width: 200px;
 }
+
+.calc-result-submit__button span {
+  display: none;
+}
+
+// Form promo
+
+.calc-result-promo {
+  background-color: $plank-color-three;
+  border: 1px solid $plank-color-two;
+  border-width: 0 1px 1px 1px;
+  padding: 0 11px 38px;
+}
+
+.calc-result-promo__content {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.calc-result-promo-item {
+  display: inline-flex;
+  width: 100%;
+  background-color: $plank-color-one;
+  color: white;
+  position: relative;
+  margin: 0 0 10px 0;
+  padding: 0 0 0 106px;
+  min-height: 100px;
+
+  .text_style_mini-block-two {
+    color: white;
+  }
+
+}
+
+.calc-result-promo-item__img-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 106px;
+  height: 100%;
+}
+
+.calc-result-promo-item__img {
+  max-width: 60px;
+}
+
+.calc-result-promo-item__text-wrap {
+  display: block;
+  width: 100%;
+  padding: 26px 10px 10px 0;
+}
+
+.calc-result-promo-item_one-day .calc-result-promo-item__text-wrap {
+  padding-top: 24px;
+}
+
+.calc-result-promo-item_guaranty .calc-result-promo-item__text-wrap {
+  padding-top: 31px;
+}
+
 
 
 
