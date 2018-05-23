@@ -739,8 +739,65 @@
   padding-top: 31px;
 }
 
+// Calc table drop-down button
 
+.calc-drop-down-btn-wrap {
+  position: relative;
+}
 
+.calc-drop-down-btn {
+  width: 42px;
+  height: 42px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 2px solid $plank-color-four;
+  cursor: pointer;
+  margin: 0 0 0 0;
+  position: relative;
+}
+
+.calc-drop-down-btn__icon {
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 6px;
+  background-image: url("../img/table-drop-down-ico.png");
+  background-size: 100% 100%;
+  top: 50%;
+  left: 50%;
+  margin: -3px 0 0 -5px;
+}
+
+.calc-drop-down-btn_active .calc-drop-down-btn__icon {
+  transform: rotate(180deg);
+}
+
+// Calc table drop-down BLOCK
+
+.calc-drop-down-block {
+
+}
+
+.table-calc-item {
+
+}
+
+.table-calc-item__head .calc-result-table__item-label,
+.table-calc-item__total .calc-result-table__item-label {
+  font-family: "Arial Black", sans-serif;
+  color: $main-text-color;
+}
+
+.table-calc-item__detail .calc-result-table__item-label {
+  color: $main-text-color;
+  flex-wrap: wrap;
+}
+
+.table-calc-item__detail .table-calc-item-detail__count,
+.table-calc-item-detail__count {
+  color: $lighten-text-color;
+  width: 100%;
+}
 
 
 

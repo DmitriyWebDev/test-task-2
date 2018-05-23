@@ -267,5 +267,29 @@ $( document ).ready(function() {
 
   });
 
+  /** Calculation table drop-down button and drop-down block */
+
+  $(function () {
+
+    const btnSelector    = '.js-calc-drop-down-btn';
+    const btnActiveClass = 'calc-drop-down-btn_active';
+    const dropDownBlock  = $( '.js-calc-drop-down-block' );
+
+    $( btnSelector ).on("click", function() {
+
+      const $this = $(this);
+
+      if( dropDownBlock.css( 'display' ) === 'block' ) {
+        dropDownBlock.css({ 'display' : 'none' });
+        $this.removeClass( btnActiveClass );
+      } else {
+        $this.addClass( btnActiveClass );
+        dropDownBlock.css({ 'display' : 'block' });
+      }
+
+    });
+
+  });
+
 
 });
