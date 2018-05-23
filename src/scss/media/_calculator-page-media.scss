@@ -280,6 +280,50 @@
     right: 0;
   }
 
+  // More works slider (sm)
+
+  .works {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 22px;
+    width: 660px;
+  }
+
+  .works-item {
+    display: none;
+    width: 200px;
+    box-shadow: none;
+    outline: none;
+
+    &:focus, &:active {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  .works-item:nth-child(1),
+  .works-item:nth-child(2),
+  .works-item:nth-child(3) {
+    display: block;
+  }
+
+  .works-item__inner {
+    width: 100%;
+  }
+
+  .works-item__img-wrap {
+    margin-bottom: 10px;
+  }
+
+  .works-item__car-title {
+    margin-bottom: 16px;
+  }
+
 }
 
 @media (min-width: $tmpl-screen-md) {
@@ -490,6 +534,25 @@
     right: -3px;
   }
 
+  // More works slider (md)
+
+  .works {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .works-item:nth-child(4) {
+    display: block;
+  }
+
+  .works-item__img-wrap {
+    margin-bottom: 24px;
+  }
+
+  .works-item__noise-insulation-level {
+    margin-bottom: 15px;
+  }
+
 }
 
 @media (min-width: $tmpl-screen-lg) {
@@ -627,6 +690,16 @@
   .calc-drop-down-btn {
     top: -6px;
     right: -3px;
+  }
+
+  // More works slider (lg)
+
+  .works {
+    margin-bottom: 48px;
+  }
+
+  .works-item__img-wrap {
+    margin-bottom: 38px;
   }
 
 }

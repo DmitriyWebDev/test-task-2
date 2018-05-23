@@ -300,7 +300,7 @@ $( document ).ready(function() {
       const $carousel = $('.js-more-works-carousel');
       /* Initializes a slick carousel only on mobile screens */
       // slick on mobile
-      if ($(window).width() > 768) {
+      if ($(window).width() > 750) {
         if ($carousel.hasClass('slick-initialized')) {
           $carousel.slick('unslick');
         }

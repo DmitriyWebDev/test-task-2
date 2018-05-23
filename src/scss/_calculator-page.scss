@@ -617,7 +617,7 @@
 .calc-result-table__item_view_material-cost {
 
   padding-top: 11px;
-  padding-bottom: 25px;
+  padding-bottom: 18px;
 
   .calc-result-table__item-label {
     line-height: 14px;
@@ -806,6 +806,10 @@
 
 // More works slider
 
+.works {
+  margin-bottom: 13px;
+}
+
 .works-slider-controls {
 
   position: relative;
@@ -816,6 +820,7 @@
     width: 40px;
     height: 40px;
     z-index: 5;
+    top: 48px;
 
     &:before {
       display: none;
@@ -850,8 +855,6 @@
 
 }
 
-
-
 .works-item {
   display: block;
   text-align: center;
@@ -860,14 +863,13 @@
 .works-item__inner {
   display: inline-block;
   vertical-align: top;
-  width: 200px;
+  width: 162px;
   cursor: pointer;
 }
 
 .works-item__img-wrap {
   width: 100%;
   text-align: center;
-  margin-bottom: 15px;
 }
 
 .works-item__img {
@@ -887,7 +889,7 @@
 }
 
 .works-item__noise-insulation-level {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
 .works-item__rating {
@@ -901,6 +903,7 @@
   vertical-align: top;
   background-image: url("../img/rate-star.png");
   background-size: 100% 100%;
+  margin-right: 5px;
 }
 
 
