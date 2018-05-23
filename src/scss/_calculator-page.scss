@@ -538,8 +538,8 @@
 }
 
 .calc-form-item_view_include-in-calc {
-  padding: 31px 20px 21px 20px;
-  margin: 0 0 5px 0;
+  padding: 31px 20px 44px 20px;
+  margin: 0 0 39px 0;
 }
 
 .calc-form-item__include-in-calc {
@@ -553,3 +553,138 @@
 .calc-form-item_view_include-in-calc .calc-form-item__title br {
   display: none;
 }
+
+// Calc result block
+
+.calc-result__title {
+  font-size: 18px;
+  font-family: "HelveticaNeueCyr-Light";
+  margin-bottom: 26px;
+}
+
+.calc-result-table {
+  border: 1px solid $plank-color-two;
+}
+
+.calc-result-table__item {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid $plank-color-two;
+  text-align: left;
+  padding: 8px 0;
+
+  &:last-child {
+    border-width: 0;
+  }
+}
+
+.calc-result-table__item_colored {
+  background-color: $plank-color-three;
+}
+
+.calc-result-table__item-label {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 20px;
+  @include text_style_additional-two;
+}
+
+.calc-result-table__item-value {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  @include text_style_additional;
+}
+
+.calc-result-table__item_view_sound-insulation {
+
+  padding-top: 0;
+  padding-bottom: 6px;
+
+  .calc-result-table__item-label {
+    line-height: 14px;
+  }
+
+  .calc-result-table__item-value {
+    padding-top: 3px;
+  }
+
+}
+
+.calc-result-table__item_view_material-cost {
+
+  padding-top: 11px;
+  padding-bottom: 25px;
+
+  .calc-result-table__item-label {
+    line-height: 14px;
+  }
+
+  .calc-result-table__item-value {
+
+    padding-top: 5px;
+
+    .text_style_benefits {
+      font-size: 14px;
+    }
+
+  }
+
+}
+
+.calc-result-table__item_view_material-service-cost {
+
+  padding-top: 8px;
+  padding-bottom: 14px;
+
+  .calc-result-table__item-label {
+    line-height: 14px;
+  }
+
+  .calc-result-table__item-value {
+
+    padding-top: 5px;
+
+    .text_style_benefits {
+      font-size: 14px;
+    }
+
+  }
+
+}
+
+// Form submit block
+
+.calc-result-submit {
+  padding: 30px 0;
+  background-color: $plank-color-three;
+  border: 1px solid $plank-color-two;
+  border-width: 0 1px;
+}
+
+.calc-result-submit__button {
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
