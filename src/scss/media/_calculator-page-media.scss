@@ -4,6 +4,17 @@
 
 }
 
+@media (min-width: 480px) {
+
+  // More works slider
+  .works-slider-controls .slick-slide {
+    opacity: 1;
+    transition: none;
+  }
+
+}
+
+
 @media (min-width: $tmpl-screen-sm) {
 
   .user-redactor-content {

@@ -291,5 +291,79 @@ $( document ).ready(function() {
 
   });
 
+  /** Our works slider (for mobile only) */
+
+  $(function () {
+
+    $(window).on('load resize orientationchange', function () {
+
+      const $carousel = $('.js-more-works-carousel');
+      /* Initializes a slick carousel only on mobile screens */
+      // slick on mobile
+      if ($(window).width() > 768) {
+        if ($carousel.hasClass('slick-initialized')) {
+          $carousel.slick('unslick');
+        }
+      }
+      else {
+        if (!$carousel.hasClass('slick-initialized')) {
+          $carousel.slick({
+            dots: false,
+            infinite: true,
+            centerMode: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            mobileFirst: true,
+            arrows: true,
+            responsive: [
+              {
+                breakpoint: 480,
+                settings: {
+                  dots: false,
+                  infinite: true,
+                  centerMode: true,
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                  mobileFirst: true,
+                  arrows: true,
+                }
+              },
+              {
+                breakpoint: 500,
+                settings: {
+                  dots: false,
+                  infinite: true,
+                  centerMode: true,
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                  mobileFirst: true,
+                  arrows: true,
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  dots: false,
+                  infinite: true,
+                  centerMode: true,
+                  slidesToShow: 3,
+                  slidesToScroll: 1,
+                  mobileFirst: true,
+                  arrows: true,
+                }
+              }
+            ]
+          });
+        }
+      }
+
+    });
+
+    $(window).trigger('resize');
+
+  });
+
+
+
 
 });

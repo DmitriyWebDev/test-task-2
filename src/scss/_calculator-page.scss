@@ -775,11 +775,15 @@
 // Calc table drop-down BLOCK
 
 .calc-drop-down-block {
-
+  padding: 14px 0 0 0;
 }
 
 .table-calc-item {
+  margin: 0 0 20px 0;
+}
 
+.table-calc-item:last-child {
+  margin: 0 0 3px 0;
 }
 
 .table-calc-item__head .calc-result-table__item-label,
@@ -799,6 +803,105 @@
   width: 100%;
 }
 
+
+// More works slider
+
+.works-slider-controls {
+
+  position: relative;
+
+  .slick-prev, .slick-next {
+    background: $plank-color-two;
+    color: transparent;
+    width: 40px;
+    height: 40px;
+    z-index: 5;
+
+    &:before {
+      display: none;
+    }
+
+  }
+
+  .slick-prev {
+    left: 0;
+
+    background-image: url("../img/slider-left-arrow.png");
+    background-size: 100% 100%;
+
+  }
+
+  .slick-next {
+    right: 0;
+
+    background-image: url("../img/slider-right-arrow.png");
+    background-size: 100% 100%;
+
+  }
+
+  .slick-slide {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .slick-slide.slick-current {
+    opacity: 1;
+  }
+
+}
+
+
+
+.works-item {
+  display: block;
+  text-align: center;
+}
+
+.works-item__inner {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  cursor: pointer;
+}
+
+.works-item__img-wrap {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.works-item__img {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.works-item__text-wrap {
+  text-align: left;
+}
+
+.works-item__car-title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.works-item__noise-insulation-level {
+  margin-bottom: 10px;
+}
+
+.works-item__rating {
+  text-align: left;
+}
+
+.works-item__rate-star {
+  width: 7px;
+  height: 7px;
+  display: inline-block;
+  vertical-align: top;
+  background-image: url("../img/rate-star.png");
+  background-size: 100% 100%;
+}
 
 
 
