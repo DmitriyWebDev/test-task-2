@@ -143,6 +143,41 @@
     padding: 4px 0 0 0;
   }
 
+  // 'Include in calc' section
+
+  .calc-form-item_view_include-in-calc {
+    padding: 38px 63px 50px;
+    margin: 0 0 5px 0;
+  }
+
+  .calc-form-item__include-in-calc-item {
+    width: auto;
+    margin-bottom: 29px;
+
+    br {
+      display: none;
+    }
+
+  }
+
+  .calc-form-item__include-in-calc {
+    margin-bottom: 22px;
+  }
+
+  .calc-form-item__include-in-calc-item:first-child {
+    margin-right: 100px;
+  }
+
+  .calc-form-item__include-in-calc-item label {
+    padding-top: 6px;
+    line-height: normal;
+    margin: 0;
+  }
+
+  .button_location_include-in-calc {
+    width: 346px;
+  }
+
 }
 
 @media (min-width: $tmpl-screen-md) {
@@ -255,6 +290,35 @@
     padding: 0;
   }
 
+  // 'Include in calc' section
+
+  .calc-form-item_view_include-in-calc {
+    padding-bottom: 55px;
+  }
+
+  .calc-form-item_view_include-in-calc .calc-form-item__title {
+    padding: 4px 0 0 42px;
+
+    br {
+      display: block;
+    }
+  }
+
+  .calc-form-item__include-in-calc {
+    margin-bottom: 17px;
+    padding-top: 10px;
+  }
+
+  .calc-form-item__include-in-calc-item:first-child {
+    margin-right: 55px;
+  }
+
+  .button_location_include-in-calc {
+    float: left;
+    margin-left: 76px;
+    width: 300px;
+  }
+
 }
 
 @media (min-width: $tmpl-screen-lg) {
@@ -298,10 +362,45 @@
     margin-bottom: 22px;
   }
 
+  // 'Include in calc' section
+
+  .calc-form-item_view_include-in-calc {
+    padding-bottom: 62px;
+  }
+
+  .calc-form-item_view_include-in-calc .calc-form-item__title {
+    padding: 4px 0 0 3px;
+  }
+
+  .calc-form-item__include-in-calc-item:first-child {
+    margin-right: 122px;
+  }
+
+  .calc-form-item__include-in-calc {
+    margin-bottom: 22px;
+  }
+
+  .button_location_include-in-calc {
+    float: left;
+    margin-left: 95px;
+    width: 365px;
+  }
+
 }
 
 @media (min-width: $tmpl-screen-xl) {
   .form-select-wrap {
     width: 385px;
   }
+
+  // 'Include in calc' section
+
+  .calc-form-item__include-in-calc-item:first-child {
+    margin-right: 157px;
+  }
+
+  .button_location_include-in-calc {
+    margin-left: 72px;
+  }
+
 }

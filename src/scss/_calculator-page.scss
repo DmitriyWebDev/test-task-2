@@ -512,3 +512,44 @@
   color: $main-text-color;
 }
 
+// 'Include in calc' section
+
+.calc-form-item__include-in-calc-item {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 29px;
+}
+
+.calc-form-item__include-in-calc-item label {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 13px;
+  margin-top: 1px;
+}
+
+.button_location_include-in-calc {
+  display: block;
+  margin: 0 auto;
+  min-width: 200px;
+  width: 200px;
+}
+
+.calc-form-item_view_include-in-calc {
+  padding: 31px 20px 21px 20px;
+  margin: 0 0 5px 0;
+}
+
+.calc-form-item__include-in-calc {
+  margin-bottom: 12px;
+}
+
+.calc-form-item_view_include-in-calc .calc-form-item__title {
+  margin-bottom: 24px;
+}
+
+.calc-form-item_view_include-in-calc .calc-form-item__title br {
+  display: none;
+}
