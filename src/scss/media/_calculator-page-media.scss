@@ -101,6 +101,46 @@
     display: inline-block;
     vertical-align: baseline;
     width: auto;
+    padding-left: 27px;
+  }
+
+  .calc-form-item_view_sound-insulation-level .calc-form-item__title {
+    margin-bottom: 9px;
+  }
+
+  .sound-insulation-item {
+    display: inline-flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 24px;
+    margin-bottom: 27px;
+  }
+
+  .sound-insulation-item:last-child {
+
+    margin-bottom: 19px;
+
+    .sound-insulation-item__label {
+      margin-right: 43px;
+    }
+
+  }
+
+  .sound-insulation-item_checked {
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+  }
+
+  .sound-insulation-item__button {
+    width: 40%;
+  }
+
+  .sound-insulation-item__content {
+    width: 60%;
+    padding: 4px 0 0 0;
   }
 
 }
@@ -132,6 +172,10 @@
 
   // Auto elements section
 
+  .calc-form-item_view_auto-elements {
+    padding-bottom: 0;
+  }
+
   .calc-form-item_view_auto-elements .calc-form-item__title {
     margin: 0 0 23px 0;
     padding: 2px 5px 0 37px;
@@ -161,6 +205,56 @@
     height: 25px;
   }
 
+  // Sound insulation level
+
+  .calc-form-item_view_sound-insulation-level {
+    padding-top: 37px;
+    padding-bottom: 0;
+  }
+
+  .calc-form-item_view_sound-insulation-level .calc-form-item__title {
+    padding-top: 0;
+  }
+
+  .calc-form-item__title-link {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding-left: 0;
+    margin-top: 8px;
+  }
+
+  .sound-insulation {
+    padding-top: 8px;
+  }
+
+  .sound-insulation-item {
+    padding-bottom: 19px;
+    margin-bottom: 22px;
+  }
+
+  .sound-insulation-item:last-child {
+    margin-bottom: 21px;
+  }
+
+  .sound-insulation-item:last-child .sound-insulation-item__label {
+    margin-right: 13px;
+  }
+
+  .sound-insulation-item_checked {
+    padding-bottom: 3px;
+    margin-bottom: 20px;
+  }
+
+  .sound-insulation-item__button {
+    width: 38%;
+  }
+
+  .sound-insulation-item__content {
+    width: 62%;
+    padding: 0;
+  }
+
 }
 
 @media (min-width: $tmpl-screen-lg) {
@@ -188,7 +282,21 @@
     padding-bottom: 0;
   }
 
+  // Sound insulation level
 
+  .sound-insulation {
+    padding-top: 10px;
+  }
+
+  .sound-insulation-item {
+    padding-bottom: 25px;
+    margin-bottom: 22px;
+  }
+
+  .sound-insulation-item_checked {
+    padding-bottom: 5px;
+    margin-bottom: 22px;
+  }
 
 }
 

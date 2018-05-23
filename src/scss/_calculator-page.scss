@@ -13,7 +13,7 @@
 }
 
 .calc-form-item_view_auto-elements {
-  padding: 26px 20px 21px 20px;
+  padding: 26px 20px 34px 20px;
 }
 
 .calc-form-item__title {
@@ -414,20 +414,30 @@
 // Sound insulation level
 
 .calc-form-item_view_sound-insulation-level {
-  padding-top: 42px;
+  padding-top: 29px;
   padding-bottom: 0;
 }
 
 .sound-insulation-item {
   border-bottom: 1px solid $plank-color-six;
-  padding: 0 0 14px 0;
+  padding: 0 0 26px 0;
   margin: 0 0 23px 0;
 }
 
-
 .sound-insulation-item:last-child {
   border-width: 0;
+  margin-bottom: 12px;
 }
+
+.sound-insulation-item_checked {
+  padding-bottom: 2px;
+}
+
+.sound-insulation-item_checked:last-child {
+  padding-bottom: 26px;
+}
+
+
 
 .calc-form-item__title-link {
   font-family: Arial, sans-serif;

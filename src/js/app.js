@@ -248,6 +248,7 @@ $( document ).ready(function() {
 
     const rootParent         = '.js-sound-insulation';
     const parentSelector     = '.js-sound-insulation-item';
+    const activeClass        = 'sound-insulation-item_checked';
     const radioBtnSelector   = '.js-form-checkbox__input';
     const btnContentSelector = '.js-sound-insulation-item__content';
 
@@ -255,6 +256,9 @@ $( document ).ready(function() {
 
       const $this  = $(this);
       const parent = $this.closest( parentSelector );
+
+      $( parentSelector ).removeClass( activeClass );
+      parent.addClass( activeClass );
 
       $( rootParent + ' ' + btnContentSelector ).css({ 'display' : 'none'});
       $( btnContentSelector, parent ).css({ 'display' : 'block'});
