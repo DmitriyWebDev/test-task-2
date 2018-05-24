@@ -31,7 +31,7 @@
 
 .footer-phones-list {
   display: flex;
-  width: 300px;
+  max-width: 300px;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 27px 32px 14px;
@@ -74,4 +74,18 @@
 .footer-dev-link-wrap {
   text-align: center;
   margin: 0 0 20px 0;
+}
+
+.footer__top-mobile-only {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 270px;
+}
+
+.footer-phones-list__item {
+  font-weight: bold;
 }

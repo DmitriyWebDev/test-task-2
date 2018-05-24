@@ -6,6 +6,26 @@
 
 @media (min-width: $tmpl-screen-sm) {
 
+  .footer__top {
+    padding: 65px 0 0 0;
+  }
+
+  .footer-menu > li:first-child > a {
+    font-size: 15px;
+    padding-bottom: 16px;
+  }
+
+  .footer__button {
+    margin-left: 10px;
+    min-width: 170px;
+  }
+
+  .footer-phones-list {
+    display: block;
+    max-width: 100%;
+    padding: 0 0 0 14px;
+  }
+
 }
 
 @media (min-width: $tmpl-screen-md) {
