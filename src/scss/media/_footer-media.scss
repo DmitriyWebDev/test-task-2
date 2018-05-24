@@ -7,7 +7,7 @@
 @media (min-width: $tmpl-screen-sm) {
 
   .footer__top {
-    padding: 65px 0 0 0;
+    padding: 65px 0 12px 0;
   }
 
   .footer-menu > li:first-child > a {
@@ -23,16 +23,89 @@
   .footer-phones-list {
     display: block;
     max-width: 100%;
-    padding: 0 0 0 14px;
+    padding: 0 0 8px 9px;
+  }
+
+  .footer-phones-list__item {
+    font-size: 14px;
+    padding-top: 3px;
+  }
+
+  .footer-links-list {
+    text-align: left;
+    width: 100%;
+  }
+
+  .footer__bottom-links-and-text {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0 0 0;
+  }
+
+  .footer-rights-text {
+    margin: 0;
+    width:auto;
+    text-align: left;
+  }
+
+  .footer-social-links {
+    margin: -7px 94px 0 0;
+  }
+
+  .footer-dev-link-wrap {
+    text-align: left;
   }
 
 }
 
 @media (min-width: $tmpl-screen-md) {
 
+  .footer__button {
+    margin-left: 0;
+    min-width: 155px;
+  }
+
+  .footer-phones-list {
+    padding: 16px 0 8px 9px;
+  }
+
+  .footer-links-list__item {
+    font-size: 11px;
+  }
+
 }
 
 @media (min-width: $tmpl-screen-lg) {
+
+  .footer__button {
+    min-width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .footer-phones-list {
+    padding: 8px 0 10px 3px;
+  }
+
+  .footer__top {
+    padding: 65px 0 0 0;
+  }
+
+  .footer-social-links {
+    margin: 0 60px 0 0;
+  }
+
+  .footer-rights-text {
+    br {
+      display: none;
+    }
+  }
+
+  .footer-menu {
+    padding-left: 0;
+  }
 
 }
 
