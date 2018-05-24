@@ -1,1 +1,77 @@
 @import "template-variables";
+
+.footer__top {
+  background-color: $plank-color-three;
+  padding: 40px 0 0 0;
+}
+
+.footer-menu {
+  display: block;
+  list-style-type: none;
+  padding-left: 20px;
+  margin: 0 0 20px 0;
+}
+
+.footer-menu>li>a {
+  display: block;
+  list-style-type: none;
+  @include text_style_additional;
+  padding-bottom: 13px;
+}
+
+.footer-menu>li:first-child>a {
+  padding-bottom: 16px;
+}
+
+.footer__button {
+  display: block;
+  margin: 0 auto 12px auto;
+  min-width: 200px;
+}
+
+.footer-phones-list {
+  display: flex;
+  width: 300px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 27px 32px 14px;
+  margin: 0 auto;
+}
+
+.footer-links-list {
+  text-align: center;
+  padding-bottom: 22px;
+}
+
+.footer-links-list__item {
+  width: 100%;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.footer-social-links {
+  display: block;
+  overflow: hidden;
+  width: 135px;
+  margin: 26px auto 17px auto;
+}
+
+.footer-social-links__item {
+  float: left;
+}
+
+.footer-social-links__item:nth-child(2) {
+  float: right;
+}
+
+.footer-rights-text {
+  display: block;
+  margin: 0 auto 5px auto;
+  width: 180px;
+  text-align: center;
+}
+
+.footer-dev-link-wrap {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
